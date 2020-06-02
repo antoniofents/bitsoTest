@@ -1,18 +1,149 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
-    <output url="file://$MODULE_DIR$/target/classes" />
-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
-      <excludeFolder url="file://$MODULE_DIR$/target" />
-    </content>
-    <orderEntry type="inheritedJdk" />
-    <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: javax.websocket:javax.websocket-api:1.1" level="project" />
-    <orderEntry type="library" name="Maven: org.glassfish.tyrus.bundles:tyrus-standalone-client-jdk:1.12" level="project" />
-    <orderEntry type="library" name="Maven: com.google.code.gson:gson:2.6" level="project" />
-  </component>
-</module>
+{
+    "common": {
+        "ok": "OK!",
+        "cancel": "Cancel",
+        "back": "Back",
+        "packageId": "Package id",
+        "orderId": "Order id",
+        "retailer": "Retailer",
+        "spaceRoute": "Space route",
+        "route": "Route",
+        "package": "Package",
+        "address": "Address",
+        "retry": "Retry"
+    },
+    "apiErrors": {
+        "unknown": "Unknown error",
+        "unknownMessage": "An unknown error happened",
+        "badParameters": "Bad parameters error",
+        "badParametersMessage": "The parameters sent are wrong",
+        "badData": "Bad data error",
+        "badDataMessage": "The received data is unexpected",
+        "serverError": "Server error",
+        "serverErrorMessage": "Unexpected server error",
+        "packageNotFound": "Package not found",
+        "packageNotFoundMessage": "The package is not declared in Paack's systems",
+        "spaceNotFound": "Space not found",
+        "spaceNotFoundMessage": "The space is not declared in Paack's systems"
+    },
+    "cmp": {
+        "BleScanner": {
+            "onDisconnectError": "Please, turn it on again",
+            "onDisconnectManager": "Device's bluetooth was turned off",
+            "onDisconnectTitle": "Barcode scanner disconnected",
+            "onErrorTitle": "Barcode scanner disconnected",
+            "onStartMessage": "Please, turn on the scanner",
+            "onStartTitle": "Looking for the barcode scanner"
+        }
+    },
+    "homeScreen": {
+        "welcome": "Warehouse Management",
+        "welcomeDescription": "What do you want to do today?",
+        "options": {
+            "labeling": "Labeling",
+            "labelingDescription": "Package label printing process",
+            "sorting": "Sorting",
+            "sortingDescription": "Package sorting process",
+            "dispatching": "Dispatching",
+            "dispatchingDescription": "Package dispatching process",
+            "returnsReception": "Returns reception",
+            "returnsReceptionDescription": "Reception package return process",
+            "returnsDispatching": "Returns dispatching",
+            "returnsDispatchingDescription": "Dispatching package return process",
+            "packageManagement": "Package management",
+            "packageManagementDescription": "Package management and info",
+            "settings": "Settings",
+            "settingsDescription": "Configure your device"
+        }
+    },
+    "settingsScreen": {
+        "scannerMode": {
+            "label": "Scanner mode",
+            "offMode": "Camera",
+            "onMode": "Eyoyo device"
+        }
+    },
+    "storybook": {
+        "loremIpsum": "Lorem ipsum",
+        "placeholder": "Placeholder",
+        "field": "Field"
+    },
+    "loginForm": {
+        "fieldLabelUsername": "Username",
+        "fieldLabelPassword": "Password",
+        "placeholderUsername": "Enter your username",
+        "placeholderPassword": "Enter your password",
+        "button": "Login",
+        "usernameRequired": "Username required",
+        "passswordRequired": "Password required",
+        "feedbackLogin": "Logging in...",
+        "feedbackError": "Invalid username or password"
+    },
+    "sortingScreen": {
+        "package": {
+            "scan": {
+                "title": "Scan now",
+                "message": "Scan an item to add it to a space",
+                "button": "Back"
+            },
+            "success": {
+                "title": "Package found!",
+                "message": "Package scanned correctly",
+                "button": "Continue"
+            },
+            "error": {
+                "title": "Oops!",
+                "message": "The package barcode is not valid",
+                "button": "Back"
+            }
+        },
+        "space": {
+            "scan": {
+                "title": "Scan a space",
+                "message": "Scan the space to add the package",
+                "button": "Back"
+            },
+            "success": {
+                "title": "Done",
+                "message": "Item added to space",
+                "button": "Continue"
+            },
+            "error": {
+                "title": "Oops!",
+                "button": "Back",
+                "message": "The space barcode is not valid"
+            }
+        }
+    },
+    "dispatchScreen": {
+        "space": {
+            "scan": {
+                "title": "Scan a space",
+                "message": "Scan a space to pick a package",
+                "backButton": "Back"
+            },
+            "success": {
+                "title": "Done",
+                "message": "Dispatch the space",
+                "button": "Continue"
+            },
+            "error": {
+                "title": "Oops!",
+                "message": "Looks like something went wrong...",
+                "button": "Back"
+            }
+        },
+        "confirm": {
+            "success": {
+                "title": "Done",
+                "message": "Packages delivered",
+                "button": "Continue"
+            }
+        }
+    },
+    "scan-driver-confirmation": {
+        "title": "Please hand over the packages",
+        "message": "Scan the barcode to confirm",
+        "backButton": "Back"
+    }
+}
